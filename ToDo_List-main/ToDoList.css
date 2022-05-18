@@ -1,177 +1,177 @@
-  @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Playfair+Display&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Playfair+Display&display=swap');
 
-  *{
-    margin: 20;
-    padding: 20;
-    box-sizing: border-box;
-  }
-  html{
-    font-size: 120%;
-    position: relative;
-  }
-  
-  body{
-    height: 150vh;
-    font-family: 'Fredoka One', cursive;
-    background-image: linear-gradient(to right,#f5a5ff,lightblue, #90b9fc );
-    color: rgb(247, 247, 247);
-  }
-
-  /* End of Variables */
-
-  .container{
-   
-    max-width: 800px;
-    padding: 15px;
-    margin: 50px auto;
-  }
-  .addTask{
-    width: 100%;
-    display: flex;
-    padding: 30px 0;
-  }
- 
-  .addTask button{
-    margin: 0,10px;
-    background:rgb(7, 7, 7);
-    color: #fbffff;
-    font-size: 25px;
-    text-transform: uppercase;
-    padding: 20px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .notCompleted, .Completed{
-    margin: 5px 0;
-    padding: 25px;
-  }
-  
-  h3{
-    font-size: 30px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
-  }
-  
-  ol{
-    list-style: none;
-    counter-reset: my-counter;
-  }
-  ol li{
-    width: 100%;
-    padding: 18px;
-    margin: 5px 0;
-    background: #e96969bb;
-    font-size: 22px;
-    counter-increment: my-counter;
-  }
-  ol.Completed li{
-    background: #00ff62;
-  }
-  ol li::before{
-    content: counter(my-counter);
-    background: #231381;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    display: inline-block;
-    line-height: 2rem;
-    text-align: center;
-    color: #fff;
-    margin-right: 0.5rem;
-  }
-  /* li button{
-    float: right;
-    padding: 5px;
-    font-size: 28px;
-    line-height: 28px;
-    margin-right: 15px;
-    background: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
-  } */
-  /*update*/
-  .container{
-  
-      border: 2px solid black;
-      border-radius: 7px;
-  }
-  
-  #new-task-input{
-    margin: 1px;
-    border-radius: 7px;
-    height: 40px;
-    width: 400px;
-   
-    border: 2px solid red;
-  }
-  #new-task-input:hover{
-    border-color: #000000;
-  }
-  #new-task-submit{
-    margin: 1px;
-    border-radius: 7px;
-    height: 40px;
-    width: 100px;
-    color: rgb(0, 0, 0);
-    background: aqua;
-  }
-  #new-task-submit:hover{
-    background: linear-gradient(135deg,lightblue,rgb(230, 144, 238));
-  }
-  h1{
-color: #000000;
-  
-  }
-  i{
-    color: #000000;
-
-  }
-  h2{
-  color: #000000;
-  }
-
-  .text{
-    margin-left: 1px;
-    border-radius: 7px;
-    height: 40px;
-    width: 400px;
-   
-    margin-top: 10px;
-  
-    border: 2px solid red;
-    
-    
-
-  }
-  .text:hover{
-    border-color: #000000;
-  }
-  button.edit {
-    margin-left: 1px;
-    margin-top: 10px;
-    border-radius: 7px;
-    height: 30px;
-    width: 100px;
-    color: rgb(0, 0, 0);
-    background: rgb(141, 251, 251);
-
-   
+*{
+  margin: 20;
+  padding: 20;
+  box-sizing: border-box;
 }
-button.remove {
+html{
+  font-size: 120%;
+  position: relative;
+}
+
+body{
+  height: 150vh;
+  font-family: 'Fredoka One', cursive;
+  background-image: linear-gradient(to right,#d98ce3,rgb(158, 215, 234), #8fbaff );
+  color: rgb(247, 247, 247);
+}
+
+/* End of Variables */
+
+.container{
+ 
+  max-width: 800px;
+  padding: 15px;
+  margin: 50px auto;
+}
+.addTask{
+  width: 100%;
+  display: flex;
+  padding: 30px 0;
+}
+
+.addTask button{
+  margin: 0,10px;
+  background:rgb(7, 7, 7);
+  color: #fbffff;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.notCompleted, .Completed{
+  margin: 5px 0;
+  padding: 25px;
+}
+
+h3{
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+ol{
+  list-style: none;
+  counter-reset: my-counter;
+}
+ol li{
+  width: 100%;
+  padding: 18px;
+  margin: 5px 0;
+  background: #e96969bb;
+  font-size: 22px;
+  counter-increment: my-counter;
+}
+ol.Completed li{
+  background: #00ff62;
+}
+ol li::before{
+  content: counter(my-counter);
+  background: #231381;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 2rem;
+  text-align: center;
+  color: #fff;
+  margin-right: 0.5rem;
+}
+/* li button{
+  float: right;
+  padding: 5px;
+  font-size: 28px;
+  line-height: 28px;
+  margin-right: 15px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+} */
+/*update*/
+.container{
+
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+#new-task-input{
   margin: 1px;
+  border-radius: 7px;
+  height: 40px;
+  width: 400px;
+ 
+  border: 2px solid rgb(23, 124, 164);
+}
+#new-task-input:hover{
+  border-color: #000000;
+}
+#new-task-submit{
+  margin: 1px;
+  border-radius: 7px;
+  height: 40px;
+  width: 100px;
+  color: rgb(0, 0, 0);
+  background: rgb(20, 212, 212);
+}
+#new-task-submit:hover{
+  background: linear-gradient(135deg,rgb(130, 178, 194),rgb(230, 144, 238));
+}
+h1{
+color: #000000;
+
+}
+i{
+  color: #000000;
+
+}
+h2{
+color: #000000;
+}
+
+.text{
+  margin-left: 1px;
+  border-radius: 7px;
+  height: 40px;
+  width: 400px;
+ 
+  margin-top: 10px;
+
+  border: 2px solid rgb(18, 102, 136);
+  
+  
+
+}
+.text:hover{
+  border-color: #000000;
+}
+button.edit {
+  margin-left: 1px;
+  margin-top: 10px;
   border-radius: 7px;
   height: 30px;
   width: 100px;
   color: rgb(0, 0, 0);
-  background: rgb(254, 155, 157);
-  
+  background: rgb(20, 212, 212);
+
+ 
+}
+button.remove {
+margin: 1px;
+border-radius: 7px;
+height: 30px;
+width: 100px;
+color: rgb(0, 0, 0);
+background: rgb(254, 155, 157);
+
 }
 button.remove:hover{
-  background: linear-gradient(135deg,lightblue,rgb(230, 144, 238));
+background: linear-gradient(135deg,lightblue,rgb(230, 144, 238));
 }
 
-button.edit:hover{background: linear-gradient(135deg,lightblue,rgb(230, 144, 238));}
+button.edit:hover{background: linear-gradient(135deg,rgb(122, 184, 205),rgb(226, 137, 234));}
